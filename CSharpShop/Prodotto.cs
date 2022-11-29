@@ -129,6 +129,19 @@ namespace CSharpShop
             string nomeEsteso = this.name + stringaZeri + codiceStringa;
             return nomeEsteso;
         }
+
+        public void StampaProdotto()
+        {
+            Console.WriteLine("------ " + this.name + " -----");
+            Console.WriteLine();
+            Console.WriteLine(this.description);
+            Console.WriteLine("Il codice del prodotto è: " + this.codice);
+            Console.WriteLine("Il prezzo del prodotto è: " + this.prezzo + " euro");
+            Console.WriteLine("L'IVA del prodotto è al: " + this.IVA + "%");
+            Console.WriteLine();
+            Console.WriteLine("Il codice NomeEsteso è: " + this.GetNomeEsteso());
+            Console.WriteLine();
+        }
     }
 
 }
