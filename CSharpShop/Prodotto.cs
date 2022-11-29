@@ -31,7 +31,6 @@ namespace CSharpShop
         /// <summary>
         /// Creo il costruttore completo
         /// </summary>
-        /// <param name="codice">il codice deve essere numerico e non deve superare gli 8 caratteri.<b>ATTENZIONE!: Qualora il codice superasse gli 8 caratteri, ogni carattere successivo all'ottavo sarà rimosso</b></param>
         /// <param name="name">Il nome del prodotto</param>
         /// <param name="description"></param>
         /// <param name="prezzo">il prezzo deve presentare massimo 2 decimali, in caso ne presenti ulteriori verrà tagliato a un formato corretto</param>
@@ -118,7 +117,7 @@ namespace CSharpShop
             return prezzo;
         }
 
-        public string GetNomeEsteso()
+        public string GetNomeEsteso()  //Qui ho unito il bonus al compito Nome Esteso, generando di base un codice prodotto nella forma NomeCodice, con padding di 0 se necessario
         {
             string stringaZeri = "";
             string codiceStringa=codice.ToString();
