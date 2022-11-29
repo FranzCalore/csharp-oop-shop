@@ -117,7 +117,7 @@ namespace CSharpShop
             return prezzo;
         }
 
-        public string GetNomeEsteso()  //Qui ho unito il bonus al compito Nome Esteso, generando di base un codice prodotto nella forma NomeCodice, con padding di 0 se necessario
+        public string GetNomeEsteso()  //Qui ho unito il bonus al compito Nome Esteso, generando di base un codice prodotto nella forma CodiceNome, con padding di 0 se necessario
         {
             string stringaZeri = "";
             string codiceStringa=codice.ToString();
@@ -125,7 +125,7 @@ namespace CSharpShop
             {
                 stringaZeri += "0";
             }
-            string nomeEsteso = this.name + stringaZeri + codiceStringa;
+            string nomeEsteso = stringaZeri + codiceStringa + this.name;
             return nomeEsteso;
         }
 

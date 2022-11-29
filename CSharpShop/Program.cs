@@ -12,7 +12,7 @@ Prodotto prodotto4 = new Prodotto("Bottiglia di Latte", "Una bottiglia da un lit
 
 List<Prodotto> scaffaliNegozio = new List<Prodotto>() {prodotto1, prodotto2, prodotto3, prodotto4 };
 
-foreach (var articolo in scaffaliNegozio)
+foreach ( Prodotto articolo in scaffaliNegozio)
 {
     articolo.StampaProdotto();
 }
